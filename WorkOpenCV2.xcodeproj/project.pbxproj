@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		17EDF7D2DE98370E70095C8D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B48EACB614E6D4361D905BC /* libPods.a */; };
+		C59F1DDC1A46A6BC0042DEE4 /* CameraUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59F1DDB1A46A6BC0042DEE4 /* CameraUtil.swift */; };
 		C5C31C171A4688BB009795B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C31C161A4688BB009795B4 /* AppDelegate.swift */; };
 		C5C31C191A4688BB009795B4 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C31C181A4688BB009795B4 /* FirstViewController.swift */; };
 		C5C31C1B1A4688BB009795B4 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C31C1A1A4688BB009795B4 /* SecondViewController.swift */; };
@@ -14,6 +16,7 @@
 		C5C31C201A4688BB009795B4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5C31C1F1A4688BB009795B4 /* Images.xcassets */; };
 		C5C31C231A4688BB009795B4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5C31C211A4688BB009795B4 /* LaunchScreen.xib */; };
 		C5C31C2F1A4688BB009795B4 /* WorkOpenCV2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C31C2E1A4688BB009795B4 /* WorkOpenCV2Tests.swift */; };
+		C5C31C3A1A46907F009795B4 /* WrapOpenCV.mm in Sources */ = {isa = PBXBuildFile; fileRef = C5C31C391A46907F009795B4 /* WrapOpenCV.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +30,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4B48EACB614E6D4361D905BC /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D2F5666D44FDAC7E73C1B40 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		C59F1DDB1A46A6BC0042DEE4 /* CameraUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraUtil.swift; sourceTree = "<group>"; };
 		C5C31C111A4688BB009795B4 /* WorkOpenCV2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorkOpenCV2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5C31C151A4688BB009795B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C5C31C161A4688BB009795B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -38,6 +44,9 @@
 		C5C31C281A4688BB009795B4 /* WorkOpenCV2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WorkOpenCV2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5C31C2D1A4688BB009795B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C5C31C2E1A4688BB009795B4 /* WorkOpenCV2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkOpenCV2Tests.swift; sourceTree = "<group>"; };
+		C5C31C381A46907F009795B4 /* WorkOpenCV2-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WorkOpenCV2-Bridging-Header.h"; sourceTree = "<group>"; };
+		C5C31C391A46907F009795B4 /* WrapOpenCV.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = WrapOpenCV.mm; sourceTree = "<group>"; };
+		F10351C0C551BCF7A35668F3 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17EDF7D2DE98370E70095C8D /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,12 +68,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4FC181AC34625CD5AE36D06C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7D2F5666D44FDAC7E73C1B40 /* Pods.debug.xcconfig */,
+				F10351C0C551BCF7A35668F3 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BF02D1BB1180F4769B954B70 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4B48EACB614E6D4361D905BC /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C5C31C081A4688BB009795B4 = {
 			isa = PBXGroup;
 			children = (
 				C5C31C131A4688BB009795B4 /* WorkOpenCV2 */,
 				C5C31C2B1A4688BB009795B4 /* WorkOpenCV2Tests */,
 				C5C31C121A4688BB009795B4 /* Products */,
+				4FC181AC34625CD5AE36D06C /* Pods */,
+				BF02D1BB1180F4769B954B70 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,6 +108,7 @@
 		C5C31C131A4688BB009795B4 /* WorkOpenCV2 */ = {
 			isa = PBXGroup;
 			children = (
+				C59F1DDB1A46A6BC0042DEE4 /* CameraUtil.swift */,
 				C5C31C161A4688BB009795B4 /* AppDelegate.swift */,
 				C5C31C181A4688BB009795B4 /* FirstViewController.swift */,
 				C5C31C1A1A4688BB009795B4 /* SecondViewController.swift */,
@@ -86,6 +116,8 @@
 				C5C31C1F1A4688BB009795B4 /* Images.xcassets */,
 				C5C31C211A4688BB009795B4 /* LaunchScreen.xib */,
 				C5C31C141A4688BB009795B4 /* Supporting Files */,
+				C5C31C391A46907F009795B4 /* WrapOpenCV.mm */,
+				C5C31C381A46907F009795B4 /* WorkOpenCV2-Bridging-Header.h */,
 			);
 			path = WorkOpenCV2;
 			sourceTree = "<group>";
@@ -122,9 +154,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C5C31C321A4688BB009795B4 /* Build configuration list for PBXNativeTarget "WorkOpenCV2" */;
 			buildPhases = (
+				25E517C1F808B0F07E4150FA /* Check Pods Manifest.lock */,
 				C5C31C0D1A4688BB009795B4 /* Sources */,
 				C5C31C0E1A4688BB009795B4 /* Frameworks */,
 				C5C31C0F1A4688BB009795B4 /* Resources */,
+				147B8A993D67F3E33583302A /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -210,14 +244,49 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		147B8A993D67F3E33583302A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		25E517C1F808B0F07E4150FA /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C5C31C0D1A4688BB009795B4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5C31C3A1A46907F009795B4 /* WrapOpenCV.mm in Sources */,
 				C5C31C1B1A4688BB009795B4 /* SecondViewController.swift in Sources */,
 				C5C31C171A4688BB009795B4 /* AppDelegate.swift in Sources */,
 				C5C31C191A4688BB009795B4 /* FirstViewController.swift in Sources */,
+				C59F1DDC1A46A6BC0042DEE4 /* CameraUtil.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,21 +409,30 @@
 		};
 		C5C31C331A4688BB009795B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D2F5666D44FDAC7E73C1B40 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = WorkOpenCV2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WorkOpenCV2/WorkOpenCV2-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		C5C31C341A4688BB009795B4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F10351C0C551BCF7A35668F3 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = WorkOpenCV2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WorkOpenCV2/WorkOpenCV2-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -411,6 +489,7 @@
 				C5C31C341A4688BB009795B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C5C31C351A4688BB009795B4 /* Build configuration list for PBXNativeTarget "WorkOpenCV2Tests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +498,7 @@
 				C5C31C371A4688BB009795B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
