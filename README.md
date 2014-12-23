@@ -2,4 +2,4 @@ WorkOpenCV2
 ===========
 
 OpenCVの勉強
-https://travis-ci.org/gAuk/WorkOpenCV2.svg?branch=master
+[![Build Status](https://travis-ci.org/gAuk/WorkOpenCV2.svg?branch=master)](https://travis-ci.org/gAuk/WorkOpenCV2)
