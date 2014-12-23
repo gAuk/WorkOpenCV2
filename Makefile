@@ -1,6 +1,6 @@
 PROJECT=WorkOpenCV2.xcodeproj
 WORKSPACE=WorkOpenCV2.xcworkspace
-SCHEME=WorkOpenCV2
+SCHEME=WorkOpenCV2Tests
 TEST_SDK=iphonesimulator
 CONFIGURATION_DEBUG=Debug
 DESTINATION="platform=iOS Simulator,name=iPhone 6 Plus,OS=8.1"
